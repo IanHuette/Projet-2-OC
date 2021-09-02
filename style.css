@@ -1,0 +1,41 @@
+#localisation {
+    display: flex;
+}
+
+#filtres {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    position: relative ;
+    bottom: 230px;
+    left: 1480px;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+#bloc_page {
+    margin: auto;
+}
+
+#section_bloc {
+    display: flex;
+    align-items: flex-start;
+}
+
+#populaire {
+    display: flex;
+}
+
+#bas_de_page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+    right: 300px;
+}
+
