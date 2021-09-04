@@ -46,9 +46,9 @@ nav li {
 
 #hébergements {
     width: 60%;
-    border: solid #f2f2f2;
+    border: solid #f1f1f1;
     border-radius: 20px;
-    background-color: #f2f2f2;
+    background-color: #f1f1f1;
     text-align: justify;
     padding-left: 25px;
     padding-right: 25px;
@@ -70,9 +70,9 @@ nav li {
 }
 #populaire {
     width: 30%;
-    border: solid #f2f2f2;
+    border: solid #f1f1f1;
     border-radius: 20px;
-    background-color: #f2f2f2;
+    background-color: #f1f1f1;
     padding-right: 25px;
     padding-left: 25px;
 }
