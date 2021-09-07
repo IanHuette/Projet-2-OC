@@ -1,4 +1,5 @@
 
+
 /* la bonne logique est d'écrire le css d'abord pour le mobile */
 /* tout en bas du fichier, on écrit ensuite les media queries pour le desktop */
 /* l'idéal est d'écrire le CSS pour le moins puissant des appareils d'abord jusqu'au plus puissant */
@@ -8,7 +9,6 @@
     tablets => from 768 to 991px
     laptops => from 992 to 1199px
     desktop screens and bigger => starting 1199px
-
     @media screen and (max-width:768px) {}
     @media screen and (min-width:768px and max-width:991px) {}
 */
@@ -83,7 +83,6 @@ img {
 }
 a.navplacement:hover {
     color: #0065FC;
-    font-weight: bold;
 
 }
 
@@ -98,9 +97,55 @@ a.navplacement:hover {
     flex-direction: column;
     line-height: 0px;
 }
-#filtres {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+.filtres {
+    display: flex;
+}
+.filtredetailling {
+    display: flex;
+    padding-left: 50px;
+}
+.imgmove {
+    display: flex;
+
+}
+.filtredetailling .fas {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+    /* border: solid #D9D9D9; */
+    border-radius: 35px 35px 35px 35px;
+}
+ #test {
+     display: flex;
+     padding-left: 70px;
+     padding-right: 20px;
+     border: solid #D9D9D9;
+     border-radius: 35px 35px 35px 35px;
+ }
+ .fas {
+
+ }
+ .test2 {
+    display: flex;
+ }
+ /* #test .fas {
+     width: 80px;
+     align-items: center;
+ } */
+
+
+#nbLogement .fas {
+    color: #0065fc;
+    font-size: 16px;
+    padding: 7px 11px 7px 11px;
+    border: solid 1px #D9D9D9;
+    border-radius: 2000px;
+    margin-right: 20px;
+}
+
+#nbLogement p {
+    display: inline;
 }
 .localisation {
     display: flex;
@@ -401,5 +446,3 @@ h3 {
         grid-row: 1/3;
     }
 }  */
-
-
