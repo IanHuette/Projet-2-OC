@@ -97,56 +97,65 @@ a.navplacement:hover {
     flex-direction: column;
     line-height: 0px;
 }
+
+/*Filtres*/
 .filtres {
     display: flex;
+    margin-top: 32px;
+    margin-left: 5px;
+    flex-wrap: wrap;
 }
+.titre-filtre {
+    margin-right: 40px;
+    position: relative;
+    bottom: 5px;
+
+}
+
 .filtredetailling {
     display: flex;
-    padding-left: 50px;
+    align-items: center;
+    padding-right: 11px;
+    margin-right: 32px;
+    border: 2px solid #d9d9d9;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    cursor: pointer;
 }
-.imgmove {
-    display: flex;
-
-}
-.filtredetailling .fas {
+.test {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    min-height: 56px;
+    min-width: 56px;
     display: flex;
     align-items: center;
-    position: relative;
-    right: 40px;
-    /* border: solid #D9D9D9; */
-    border-radius: 35px 35px 35px 35px;
+    justify-content: center;
+    margin: -2px;
+    color: #0065FC;
 }
- #test {
-     display: flex;
-     padding-left: 70px;
-     padding-right: 20px;
-     border: solid #D9D9D9;
-     border-radius: 35px 35px 35px 35px;
- }
- .fas {
-
- }
- .test2 {
-    display: flex;
- }
- /* #test .fas {
-     width: 80px;
-     align-items: center;
- } */
-
-
-#nbLogement .fas {
+.h2filtre {
+    margin: 0 10px;
+}
+/*barre info logement*/
+.nbLogement {
+    margin-left: 4px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.nbLogement .fas {
     color: #0065fc;
-    font-size: 16px;
-    padding: 7px 11px 7px 11px;
+    padding: 7px 12px;
     border: solid 1px #D9D9D9;
-    border-radius: 2000px;
+    border-radius: 20px;
     margin-right: 20px;
 }
 
-#nbLogement p {
+.nbLogement p {
     display: inline;
 }
+/*barre de recherche localisation*/
 .localisation {
     display: flex;
     flex-direction: row;
@@ -164,8 +173,8 @@ a.navplacement:hover {
 }
 .barre-recherche {
     padding: 0 0 0 20px;
-    height: 50px;
-    width: 220px;
+    height: 57px;
+    width: 250px;
     border: none;
     border-top: solid 1px #F2F2F2;
     border-bottom: solid 1px #F2F2F2;
@@ -181,7 +190,7 @@ a.navplacement:hover {
     color: white;
     font-weight: 700;
     font-size: 16px;
-    padding: 17px;
+    padding: 16px;
     cursor: pointer;
 }
 
