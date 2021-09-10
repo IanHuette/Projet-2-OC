@@ -235,33 +235,23 @@ body {
 
 #hebergements {
     width: 56%;
-    height: 650px;
+    height: 100%;
     border: solid #f2f2f2;
     border-radius: 20px;
     background-color: #f2f2f2;
     text-align: justify; 
     padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #emphbg {
-    display: flex;
-    position: relative;
-    top: 30px;
-    left: 6px;
     color: black;
     font-weight: bold;
+    margin: 10px 0 30px 5px;
     font-size: 1.2em;
     text-decoration: none;
 }
-.textimg {
-    /* line-height: 1px; 
-    height: 20px; */
-}
-.margtexthbg {
-    margin-left: 10px;
-    line-height: 10%; 
-}
+
 h3 {
     display: block;
     font-size: 1.17em;
@@ -276,12 +266,6 @@ h3 {
     height: 10%;
 }
 
-.textimg1a {
-    display: flex;
-    flex-wrap: wrap; */
-    line-height: 10%; 
-    height: 20px; 
-}
 .imghébergement {
     width: 100%;
     height: 140px;
@@ -290,6 +274,7 @@ h3 {
 
 .imgpopulaire {
     width: 33.3%;
+    height: auto;
     border-radius: 20px 0px 0px 20px;
     padding: 3px;
 }
@@ -320,41 +305,27 @@ h3 {
 }
 #populaire {
     width: 26%;
-    height: 650px;
+    height: auto;
     border: solid #f2f2f2;
     border-radius: 20px;
     background-color: #f2f2f2;
     padding-top: 15px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 #famous {
 
 }
-.plcfamous {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-.plcfamous h4 {
 
-}
-.chgt0 {
-    position: relative;
-    top: 26px;
 
-}
-.chgt {
-    position: relative;
-    top: 9px;
-}
 #wrap1 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
 }
 .starsfamous {
-    margin-block-start: 50px
+    display: flex;
+    justify-content: flex-start;
 }
 
 .border {
@@ -368,18 +339,34 @@ h3 {
     padding: 3px;
     cursor: pointer;
 }
+.border p {
+    margin: 3px 0 10px 10px;
+}
+.border h4 {
+    margin: 10px 0 0px 10px;
+}
 .border:hover {
     transform: scale(1.02);
 }
 .border2 {
-    height: 150px;
     display: flex;
+    height: 140px;
     border: solid white;
     background-color: white;
     box-shadow: 0 0 20px #0000002e;
     border-radius: 20px;
-    margin-block-end: 9%;
+    margin-block-end: 44px;
     cursor: pointer;
+}
+/* .testnum555 {
+    display: flex;
+    flex-direction: column;
+} */
+.border2 p {
+    margin: 0px 0 60px 0px;
+}
+.border2 h4 {
+    margin: 10px 0 7px 0;
 }
 .border2:hover {
     transform: scale(1.02);
