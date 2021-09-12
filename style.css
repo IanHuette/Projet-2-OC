@@ -14,9 +14,9 @@
 
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 #bloc_page {
-    font-family: 'Raleway', sans-serif;
     width: 90%;
     margin: auto;
 }
@@ -257,7 +257,6 @@ h3 {
 }
 .textimg2 {
     padding-left: 20px;
-    height: 10%;
 }
 
 .imghebergement {
@@ -425,7 +424,7 @@ h3 {
     height: 97%;
 }
 
-#pomègues {
+#pomegues {
     display: flex;
     flex-direction: column;
 }
@@ -471,11 +470,13 @@ h3 {
 
     display: flex;
     justify-content: space-between;
-    width: 75%;
-    max-width: 1440px;
+    width: 90%;
+    justify-content: flex-start;
 }
-
-#footerplacement1 {
+.bloc {
+    width: 30%;
+}
+.footerplacement1 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -490,14 +491,7 @@ h3 {
      text-decoration: none;
      color: initial;
  }
- #plc {
-     margin-right: 350px;
- }
 
-
-#nos_herbergements {
-    padding: 20px;
-}
 /* media queries for mobiles and tablets */
 
 @media screen and (max-width:992px) {
@@ -649,7 +643,7 @@ h3 {
         flex-direction: column;
         background-color: #f2f2f2;
     }
-    #bloc {
+    .bloc {
         padding-top: 20px;
         padding-left: 55px;
 
