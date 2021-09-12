@@ -49,19 +49,15 @@ body {
  }
  .hbgheader:hover {
     border-top: solid #0065FC;
-    box-sizing: border-box;
-
  }
 .actheader {
     display: flex;
     justify-content: center;
     width: 120px;
     height: 70px;
-    box-sizing: border-box;
  }
 .actheader:hover {
     border-top: solid #0065FC;
-    box-sizing: border-box;
 }
 .loginheader {
     display: flex;
@@ -494,12 +490,13 @@ h3 {
 
 /* media queries for mobiles and tablets */
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:768px) {
 
     #bloc_page {
         width: 100%;
         height: 100%;
     }
+    /* navbar*/
     .navbar {
         display: flex;
         flex-direction: column;
@@ -509,40 +506,47 @@ h3 {
         margin-left: 25px;
     }
     .loginheader {
+        display: flex;
         font-size: 17px;
-        position: relative;
-        bottom: 70px;
+    }
+    .navplacement1 {
+        position: absolute;
+        top: 0px;
+        right: 30px;
     }
     #navform {
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
     .acthbg {
-        font-size: 17px;
         width: 100%;
+        font-size: 17px;
     }
-    .navplacement {
-        border-bottom: #f2f2f2 solid;
-    }
-    
     .hbgheader {
-        margin-left: 130px;
+        width: 50%;
+        border-bottom: #f2f2f2 solid 3px;
     }
-    
     .hbgheader:hover {
         border-top: none;
+        border-bottom: #0065FC solid 3px;
     }
     .actheader {
-        margin-left: 90px;
+        width: 50%;
+        border-bottom: #f2f2f2 solid 3px;
     }
     .actheader:hover {
         border-top: none;
+        border-bottom: #0065FC solid 3px;
     }
+
+    /* header */
     #titre_principal {
         margin-top: 10px;
     }
     .taille {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     #section_bloc {
         flex-direction: column;
@@ -573,10 +577,13 @@ h3 {
     .filtredetailling {
         order: 2;
     }
+    /* section 1 (hébergement/populaire)*/
     #populaire {
         width: auto;
         order:1;
         border-radius: 0%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     #hebergements {
         width: auto;
@@ -584,6 +591,8 @@ h3 {
         order:2;
         background-color: white;
         border-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .imghebergement {
         height: 70%;
@@ -592,11 +601,10 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-
     #sub2 {
-        padding-top: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     #subsection2 {
         height: auto;
@@ -604,10 +612,18 @@ h3 {
         flex-direction: column;
     }
     .border {
-        height: 35vh;
+        width: 100%;
+    }
+    .imghebergement {
+        height: 17vh;
     }
     .border2 {
         width: 100%;
+        height: 20vh;
+        margin-block-end: 15px;
+    }
+    .imgpopulaire {
+        width: 43%;
     }
     .border3 {
         width: auto;
@@ -633,6 +649,7 @@ h3 {
     .imgact1a {
         height: 160px;
     }
+    /* footer */
     #bdp {
         margin-top: 40px;
         height: 100%;
@@ -650,21 +667,179 @@ h3 {
     }
 }
 
-/* 
-@media screen and (min-width:1115px) and (max-width:1525px) {
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #bloc_page {
+        width: 100%;
+        height: 100%;
+    }
+    /* navbar*/
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .logoreservia {
+        margin-left: 25px;
+    }
+    .loginheader {
+        display: flex;
+        font-size: 17px;
+    }
+    .navplacement1 {
+        position: absolute;
+        top: 0px;
+        right: 30px;
+    }
+    #navform {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .acthbg {
+        width: 100%;
+        font-size: 17px;
+    }
+    .hbgheader {
+        width: 50%;
+        border-bottom: #f2f2f2 solid 3px;
+    }
+    .hbgheader:hover {
+        border-top: none;
+        border-bottom: #0065FC solid 3px;
+    }
+    .actheader {
+        width: 50%;
+        border-bottom: #f2f2f2 solid 3px;
+    }
+    .actheader:hover {
+        border-top: none;
+        border-bottom: #0065FC solid 3px;
+    }
+
+    /* header */
+    #titre_principal {
+        margin-top: 10px;
+    }
+    .taille {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #section_bloc {
+        flex-direction: column;
+    }
+    .localisation {
+        justify-content: flex-start;
+    }
+    .barre-recherche {
+        width: 65%;
+        margin-right: -13px;
+    }
+    #searchBtnIcon {
+        display: initial;
+        border-radius: 20px;
+        width: 20px;
+        font-size: 18px;
+    }
+    #searchBtnText {
+        display: none;
+    }
+    .filtres {
+        margin-top: -15px;
+    }
+    .titre-filtre {
+        width: 100%;
+        order: 1;
+    }
+    .filtredetailling {
+        order: 2;
+    }
+    /* section 1 (hébergement/populaire)*/
+    #populaire {
+        width: auto;
+        order:1;
+        border-radius: 0%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #hebergements {
+        width: auto;
+        height: 100%;
+        order:2;
+        background-color: white;
+        border-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .imghebergement {
+        height: 70%;
+    }
+    #wrap1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #sub2 {
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     #subsection2 {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-    #port {
-        grid-row: 1/3;
+    .border {
+        width: 100%;
     }
-    #frioul {
-        grid-row: 2;
-        grid-column: 2;
+    .imghebergement {
+        height: 25vh;
     }
-    #calanques {
-        grid-row: 1/3;
+    .border2 {
+        width: 100%;
+        height: 20vh;
+        margin-block-end: 15px;
     }
-}  */
+    .imgpopulaire {
+        width: 43%;
+    }
+    .border3 {
+        width: auto;
+        min-height: 310px;
+        max-height: 310px;
+    }
+    .border3a {
+        width: auto;
+        min-height: 310px;
+        max-height: 310px;
+    }
+    .border3b {
+        width: auto;
+        min-height: 310px;
+        max-height: 310px;
+    }
+    .imgact {
+        height: 25vh;
+    }
+    .imgact1 {
+        height: 25vh;
+    }
+    .imgact1a {
+        height: 25vh;
+    }
+    /* footer */
+    #bdp {
+        margin-top: 40px;
+        height: 100%;
+    }
+    #bas_de_page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+    }
+    .bloc {
+        padding-top: 20px;
+        padding-left: 55px;
+
+    }
+} 
