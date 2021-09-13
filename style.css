@@ -1,17 +1,3 @@
-
-/* la bonne logique est d'écrire le css d'abord pour le mobile */
-/* tout en bas du fichier, on écrit ensuite les media queries pour le desktop */
-/* l'idéal est d'écrire le CSS pour le moins puissant des appareils d'abord jusqu'au plus puissant */
-
-/*
-    small screen sizes => from 0 to 768px
-    tablets => from 768 to 991px
-    laptops => from 992 to 1199px
-    desktop screens and bigger => starting 1199px
-    @media screen and (max-width:768px) {}
-    @media screen and (min-width:768px and max-width:991px) {}
-*/
-
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -25,6 +11,7 @@ body {
 }
 
 /* header */
+
 .navbar {
     display: flex;
     height: 100px;
@@ -39,25 +26,33 @@ body {
     justify-content: right;
     width: 100%;
     height: 70px;
-
- }
+}
+.acthbg {
+    display: flex;
+}
 .hbgheader {
     display: flex;
     justify-content: center;
     width: 140px;
     height: 70px;
- }
- .hbgheader:hover {
+}
+.hbgheader:hover {
     border-top: solid #0065FC;
- }
+}
 .actheader {
     display: flex;
     justify-content: center;
     width: 120px;
     height: 70px;
- }
+}
 .actheader:hover {
     border-top: solid #0065FC;
+}
+.navplacement {
+    padding-top: 45px;
+}
+a.navplacement:hover {
+    color: #0065FC;
 }
 .loginheader {
     display: flex;
@@ -65,39 +60,69 @@ body {
     width: 100px;
     height: 70px;
     padding-right: 20px;
- }
-
-.navplacement {
-    padding-top: 45px;
-} 
+}
 .navplacement1 {
     padding-top: 45px;
     color: #0065FC;
     font-weight: bold;
 }
-a.navplacement:hover {
-    color: #0065FC;
 
-}
+/*section1*/
 
-.acthbg {
-    display: flex;
-}
-/*div en dessous header*/
 #titre_principal {
     display: flex;
     flex-direction: column;
     line-height: 0px;
 }
-
-
-/* searchIcon */
 #searchBtnIcon {
     display: none;
 }
 
+/*barre de recherche localisation*/
+
+.localisation {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+#localizationIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 14px 0 0 14px;
+}
+.fa-map-marker-alt {
+    font-size: 20px;
+}
+.barre-recherche {
+    font-size: 18px;
+    padding: 0 0 0 20px;
+    height: 57px;
+    width: 250px;
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+}
+.bouton-recherche {
+    border: none;
+    border-radius: 0 14px 14px 0;
+    background-color: #0065fc;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px;
+    cursor: pointer;
+}
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
 
 /*Filtres*/
+
 .filtres {
     display: flex;
     margin-top: 30px;
@@ -110,7 +135,6 @@ a.navplacement:hover {
     margin-right: 40px;
     font-size: 22px;
 }
-
 .filtredetailling {
     display: flex;
     align-items: center;
@@ -125,7 +149,7 @@ a.navplacement:hover {
     transform: scale(1.013);
     background-color:#f3f8ff;
 }
-.test {
+.compartimentfiltre {
     background-color: #DEEBFF;
     border-radius: 100%;
     height: 48px;
@@ -154,7 +178,9 @@ a.navplacement:hover {
 .fa-dog {
     font-size: 20px;
 }
+
 /*barre info logement*/
+
 .nbLogement {
     margin-left: 4px;
     margin-top: 10px;
@@ -167,60 +193,17 @@ a.navplacement:hover {
     border-radius: 20px;
     margin-right: 10px;
 }
-
 .nbLogement p {
     display: inline;
 }
 
-/*barre de recherche localisation*/
-.localisation {
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 35px;
-}
-#localizationIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: auto;
-    background-color: #F2F2F2;
-    border-radius: 14px 0 0 14px;
-}
-.barre-recherche {
-    font-size: 18px;
-    padding: 0 0 0 20px;
-    height: 57px;
-    width: 250px;
-    border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
-}
-.fa-map-marker-alt {
-    font-size: 20px;
-}
-::placeholder {
-    color: black;
-    font-weight: bold;
-}
-.bouton-recherche {
-    border: none;
-    border-radius: 0 14px 14px 0;
-    background-color: #0065fc;
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 16px;
-    cursor: pointer;
-}
+/*section hébergement*/
 
 #section_bloc {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
 }
-
-
 #hebergements {
     width: 60%;
     height: auto;
@@ -231,103 +214,11 @@ a.navplacement:hover {
     padding-left: 40px;
     padding-right: 40px;
 }
-#emphbg {
-    color: black;
-    font-weight: bold;
-    margin: 10px 0 30px 5px;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-.stars {
-    margin-left: 10px;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-.textimg2 {
-    padding-left: 20px;
-}
-
-.imghebergement {
-    width: 100%;
-    height: 180px;
-    border-radius: 20px 20px 0 0px;
-    object-fit: cover;
-}
-
-.imgpopulaire {
-    width: 37%;
-    height: auto;
-    border-radius: 20px 0px 0px 20px;
-    padding: 3px;
-    object-fit: cover;
-}
-.imgact {
-    width: 100%;
-    height: 270px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-.imgact1 {
-    width: 100%;
-    height: 545px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-.imgact1a {
-    width: 100%;
-    height: 165px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-}
-.titleandlogo {
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-}
-.fas.fa-chart-line {
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-}
-#populaire {
-    width: 26%;
-    height: auto;
-    border: solid #f2f2f2;
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    padding-top: 15px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-.popularCardRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-}
-
 #wrap1 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
 }
-.starsfamous {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
-}
-.space {
-    flex: 1;
-}
-
 .border {
     display: flex;
     flex-direction: column;
@@ -339,15 +230,60 @@ h3 {
     padding: 3px;
     cursor: pointer;
 }
-.border p {
-    margin: 3px 0 10px 10px;
+.border:hover {
+    transform: scale(1.02);
 }
 .border h4 {
     font-size: 18px;
     margin: 10px 0 0px 10px;
 }
-.border:hover {
-    transform: scale(1.02);
+.border p {
+    margin: 3px 0 10px 10px;
+}
+.imghebergement {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0 0px;
+    object-fit: cover;
+}
+.stars {
+    margin-left: 10px;
+}
+.hostingMainCardGradeIcon {
+    color: #0065fc;
+}
+.hostingMainCardGradeIconEmpty{
+    color: #d9d9d9;
+}
+#emphbg {
+    color: black;
+    font-weight: bold;
+    margin: 10px 0 30px 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/*section 1 les plus populaire */
+
+#populaire {
+    width: 26%;
+    height: auto;
+    border: solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.titleandlogo {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.fas.fa-chart-line {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 .border2 {
     display: flex;
@@ -359,16 +295,48 @@ h3 {
     margin-block-end: 40px;
     cursor: pointer;
 }
-
-.border2 p {
-    margin-top: 5px;
-}
 .border2 h4 {
     font-size: 18px;
     margin: 15px 0 0 0;
 }
+.border2 p {
+    margin-top: 5px;
+}
 .border2:hover {
     transform: scale(1.02);
+}
+.imgpopulaire {
+    width: 37%;
+    height: auto;
+    border-radius: 20px 0px 0px 20px;
+    padding: 3px;
+    object-fit: cover;
+}
+.popularCardRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.space {
+    flex: 1;
+}
+.starsfamous {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+/*section 2 activité */
+
+#sub2 {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+#subsection2 {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4,1fr);
 }
 .border3 {
     display: flex;
@@ -381,6 +349,27 @@ h3 {
 .border3:hover {
     transform: scale(1.02);
 }
+#port {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/3;
+    height: 97%;
+}
+#calanques {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/3;
+    height: 97%;
+}
+.imgact1 {
+    width: 100%;
+    height: 545px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.textimg2 {
+    padding-left: 20px;
+}
 .border3a {
     display: flex;
     box-shadow: 0 0 20px #0000002e;
@@ -391,6 +380,20 @@ h3 {
 }
 .border3a:hover {
     transform: scale(1.02);
+}
+#pomegues {
+    display: flex;
+    flex-direction: column;
+}
+#dame {
+    display: flex;
+    flex-direction: column;
+}
+.imgact {
+    width: 100%;
+    height: 270px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 .border3b {
     display: flex;
@@ -403,55 +406,24 @@ h3 {
 .border3b:hover {
     transform: scale(1.02);
 }
-#sub2 {
-    margin-top: 70px;
-    margin-bottom: 60px;
-}
-#subsection2 {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(4,1fr);
-}
-
-#port {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1/3;
-    height: 97%;
-}
-
-#pomegues {
-    display: flex;
-    flex-direction: column;
-}
-
 #frioul {
     display: flex;
     flex-direction: column;
     grid-row: 2;
 }
-#calanques {
-    display: flex;
-    flex-direction: column;
-    grid-row: 1/3;
-    height: 97%;
-}
-#dame {
-    display: flex;
-    flex-direction: column;
-}
 #longchamp {
     display: flex;
     flex-direction: column;
 }
-/* implantation étoile */
-.hostingMainCardGradeIcon {
-    color: #0065fc;
+.imgact1a {
+    width: 100%;
+    height: 165px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
-.hostingMainCardGradeIconEmpty{
-    color: #d9d9d9;
-}
+
 /* footer */
+
 #bdp {
     width: 100%;
     height: 200px;
@@ -460,8 +432,6 @@ h3 {
     justify-content: center;
     align-items: center;
 } 
-
-
 #bas_de_page {
 
     display: flex;
@@ -472,6 +442,9 @@ h3 {
 .bloc {
     width: 30%;
 }
+.footertitle {
+    font-size: 20px;
+}
 .footerplacement1 {
     width: 100%;
     display: flex;
@@ -479,9 +452,6 @@ h3 {
 }
 .footerlink {
     margin-bottom: 10px;
-}
-.footertitle {
-    font-size: 20px;
 }
  a {
      text-decoration: none;
@@ -505,15 +475,6 @@ h3 {
     .logoreservia {
         margin-left: 25px;
     }
-    .loginheader {
-        display: flex;
-        font-size: 17px;
-    }
-    .navplacement1 {
-        position: absolute;
-        top: 0px;
-        right: 30px;
-    }
     #navform {
         display: flex;
         justify-content: center;
@@ -526,6 +487,15 @@ h3 {
     .hbgheader {
         width: 50%;
         border-bottom: #f2f2f2 solid 3px;
+    }
+    .loginheader {
+        display: flex;
+        font-size: 17px;
+    }
+    .navplacement1 {
+        position: absolute;
+        top: 0px;
+        right: 30px;
     }
     .hbgheader:hover {
         border-top: none;
@@ -540,16 +510,13 @@ h3 {
         border-bottom: #0065FC solid 3px;
     }
 
-    /* header */
-    #titre_principal {
-        margin-top: 10px;
-    }
+    /* section 1 */
     .taille {
         margin-left: 20px;
         margin-right: 20px;
     }
-    #section_bloc {
-        flex-direction: column;
+    #titre_principal {
+        margin-top: 10px;
     }
     .localisation {
         justify-content: flex-start;
@@ -578,12 +545,8 @@ h3 {
         order: 2;
     }
     /* section 1 (hébergement/populaire)*/
-    #populaire {
-        width: auto;
-        order:1;
-        border-radius: 0%;
-        padding-right: 20px;
-        padding-left: 20px;
+    #section_bloc {
+        flex-direction: column;
     }
     #hebergements {
         width: auto;
@@ -594,13 +557,31 @@ h3 {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .imghebergement {
-        height: 70%;
-    }
     #wrap1 {
         display: flex;
         flex-direction: column;
     }
+    .imghebergement {
+        height: 70%;
+        height: 17vh;
+    }
+    #populaire {
+        width: auto;
+        order:1;
+        border-radius: 0%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .border2 {
+        height: 20vh;
+        margin-block-end: 15px;
+    }
+    .imgpopulaire {
+        width: 43%;
+    }
+
+    /*section activité*/
+
     #sub2 {
         margin-top: 0px;
         margin-left: 20px;
@@ -611,31 +592,15 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-    .border {
-        width: 100%;
-    }
-    .imghebergement {
-        height: 17vh;
-    }
-    .border2 {
-        width: 100%;
-        height: 20vh;
-        margin-block-end: 15px;
-    }
-    .imgpopulaire {
-        width: 43%;
-    }
     .border3 {
         width: auto;
         min-height: 210px;
         max-height: 210px;
     }
-    .border3a {
-        width: auto;
-        min-height: 210px;
-        max-height: 210px;
+    .imgact1 {
+        height: 160px;
     }
-    .border3b {
+    .border3a {
         width: auto;
         min-height: 210px;
         max-height: 210px;
@@ -643,13 +608,17 @@ h3 {
     .imgact {
         height: 160px;
     }
-    .imgact1 {
-        height: 160px;
+    .border3b {
+        width: auto;
+        min-height: 210px;
+        max-height: 210px;
     }
     .imgact1a {
         height: 160px;
     }
+
     /* footer */
+
     #bdp {
         margin-top: 40px;
         height: 100%;
@@ -673,7 +642,7 @@ h3 {
         width: 100%;
         height: 100%;
     }
-    /* navbar*/
+    /*header*/
     .navbar {
         display: flex;
         flex-direction: column;
@@ -681,15 +650,6 @@ h3 {
     }
     .logoreservia {
         margin-left: 25px;
-    }
-    .loginheader {
-        display: flex;
-        font-size: 17px;
-    }
-    .navplacement1 {
-        position: absolute;
-        top: 0px;
-        right: 30px;
     }
     #navform {
         display: flex;
@@ -716,17 +676,23 @@ h3 {
         border-top: none;
         border-bottom: #0065FC solid 3px;
     }
-
-    /* header */
-    #titre_principal {
-        margin-top: 10px;
+    .loginheader {
+        display: flex;
+        font-size: 17px;
     }
+    .navplacement1 {
+        position: absolute;
+        top: 0px;
+        right: 30px;
+    }
+
+    /* barre recherche filtre*/
     .taille {
         margin-left: 20px;
         margin-right: 20px;
     }
-    #section_bloc {
-        flex-direction: column;
+    #titre_principal {
+        margin-top: 10px;
     }
     .localisation {
         justify-content: flex-start;
@@ -754,13 +720,11 @@ h3 {
     .filtredetailling {
         order: 2;
     }
+
     /* section 1 (hébergement/populaire)*/
-    #populaire {
-        width: auto;
-        order:1;
-        border-radius: 0%;
-        padding-right: 20px;
-        padding-left: 20px;
+
+    #section_bloc {
+        flex-direction: column;
     }
     #hebergements {
         width: auto;
@@ -771,13 +735,31 @@ h3 {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .imghebergement {
-        height: 70%;
-    }
     #wrap1 {
         display: flex;
         flex-direction: column;
     }
+    .imghebergement {
+        height: 70%;
+        height: 25vh;
+    }
+    #populaire {
+        width: auto;
+        order:1;
+        border-radius: 0%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .border2 {
+        width: 100%;
+        height: 20vh;
+        margin-block-end: 15px;
+    }
+    .imgpopulaire {
+        width: 43%;
+    }
+
+    /* section 2 activité */
     #sub2 {
         margin-top: 0px;
         margin-left: 20px;
@@ -788,31 +770,15 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-    .border {
-        width: 100%;
-    }
-    .imghebergement {
-        height: 25vh;
-    }
-    .border2 {
-        width: 100%;
-        height: 20vh;
-        margin-block-end: 15px;
-    }
-    .imgpopulaire {
-        width: 43%;
-    }
     .border3 {
         width: auto;
         min-height: 310px;
         max-height: 310px;
     }
-    .border3a {
-        width: auto;
-        min-height: 310px;
-        max-height: 310px;
+    .imgact1 {
+        height: 25vh;
     }
-    .border3b {
+    .border3a {
         width: auto;
         min-height: 310px;
         max-height: 310px;
@@ -820,8 +786,10 @@ h3 {
     .imgact {
         height: 25vh;
     }
-    .imgact1 {
-        height: 25vh;
+    .border3b {
+        width: auto;
+        min-height: 310px;
+        max-height: 310px;
     }
     .imgact1a {
         height: 25vh;
@@ -840,6 +808,5 @@ h3 {
     .bloc {
         padding-top: 20px;
         padding-left: 55px;
-
     }
-} 
+}
