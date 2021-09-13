@@ -494,7 +494,7 @@ a.navplacement:hover {
     }
     .navplacement1 {
         position: absolute;
-        top: 0px;
+        top: -5px;
         right: 30px;
     }
     .hbgheader:hover {
@@ -682,7 +682,7 @@ a.navplacement:hover {
     }
     .navplacement1 {
         position: absolute;
-        top: 0px;
+        top: -5px;
         right: 30px;
     }
 
