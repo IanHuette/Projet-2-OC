@@ -458,9 +458,9 @@ a.navplacement:hover {
      color: initial;
  }
 
-/* media queries for mobiles and tablets */
+/* Partie media queries */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px) { /*Media queries pour mobile*/
 
     #bloc-page {
         width: 100%;
@@ -636,6 +636,7 @@ a.navplacement:hover {
     }
 }
 
+/* Media queries pour les version tablettes */
 
 @media screen and (min-width:768px) and (max-width:992px) {
     #bloc-page {

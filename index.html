@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+    <head> <!-- Balise d'entête -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,8 @@
         <title>Reservia : location d'hébergement de vacance</title>
     </head>
 
-    <body>
-        <div id="bloc-page">
+    <body> <!-- corps du document html-->
+        <main id="bloc-page">
             <header>
                 <nav class="navbar">
                 <img class="logoreservia" src="images/logo/Reservia.svg" alt="#">
@@ -32,13 +32,14 @@
                     </div>
                 </nav>
             </header>
-            <section>
+            
+            <section> <!-- Section englobant le titre ainsi que la barre recherche et les filtres -->
                 <div class="taille">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <div id="titre-principal">
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                    <div class="localisation">
+                    <div class="localisation"> <!-- barre de recherche-->
                         <div id="localizationIcon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -46,7 +47,7 @@
                         <button class="bouton-recherche" id="searchBtnText">Rechercher</button>
                         <i class="fas fa-search bouton-recherche" id="searchBtnIcon" aria-hidden="true"></i>
                     </div>
-                        <div class="filtres">
+                        <div class="filtres"> <!-- partie filtre-->
                             <h2 class="titre-filtre">Filtres</h2>
                                 <div class="filtredetailling">
                                     <div class="compartimentfiltre">
@@ -73,17 +74,17 @@
                                     <h2 class="h2filtre">Animaux autorisés</h2>
                                 </div>
                         </div>
-                    <div class="nbLogement">
+                    <div class="nbLogement"> <!-- texte sous le filtre-->
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
             </section>
-            <section>
-                <div id="section-bloc">
-                    <div id="hebergements">
+            <section> <!-- Section englobant la partie hébergement et les plus populaires-->
+                <article id="section-bloc">
+                    <div id="hebergements"> <!--Bloc hébergement-->
                         <h2>Hébergements à Marseille</h2>
-                        <div id="wrap1">
+                        <div id="wrap1"><!-- élement grid-->
                             <div class="border">
                                 <img class="imghebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                                 <h4>Auberge de la cannebière</h4>
@@ -159,7 +160,7 @@
                             <a id="emphbg" href="#">Afficher plus</a>
                         </div>
                     </div>
-                    <div id="populaire">
+                    <aside id="populaire"> <!-- bloc les plus populaire-->
                         <div class="titleandlogo">
                             <h2>Les plus populaires</h2>
                             <i class="fas fa-chart-line"></i>
@@ -209,11 +210,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </aside>
+                </article>
             </section>
-            <section>
-                <div id="sub2">
+            <section> <!-- Section pour la galerie 'activités à Marseille'-->
+                <article id="sub2">
                     <h2>Activités à Marseille</h2>
                     <div id="subsection2">
                         <div class="border3" id="port">
@@ -253,10 +254,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
-        </div>
-        <footer id="bdp">
+        </main>
+        <footer id="bdp"> <!-- pied de page du site-->
             <div id="bas-de-page">
                 <div class="bloc">
                     <h2 class="footertitle">A propos</h2>
